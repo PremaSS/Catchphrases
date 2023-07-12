@@ -1,0 +1,38 @@
+body {
+    font-family: "Neuropol X";
+    letter-spacing: 2px;
+    padding: 20px;
+    font-size: 22px;
+    background-color: #090909;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+span {
+    animation: blinker 1s linear infinite;
+}
+
+#typedtext {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    #typedtext {
+        font-size: 20px;
+    }
+}
